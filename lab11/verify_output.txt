@@ -1,0 +1,64 @@
+reading with pandas ...
+re-reading with the csv module ...
+Parsons rows: 728 keys, 1 BBL
+
+T  number                                              pandas              csv module   ok
+-------------------------------------------------------------------------------------------
+1  rows                                               304,905                 304,905   PASS
+1  columns                                                 44                      44   PASS
+1  distinct Problem values                                174                     174   PASS
+1  earliest Created Date                  2025-11-01 00:00:04     2025-11-01 00:00:04   PASS
+1  latest Created Date                    2025-11-30 23:59:52     2025-11-30 23:59:52   PASS
+1  rows with no Closed Date                             4,136                   4,136   PASS
+1  Status mix of those rows            {'In Progress': 3402, 'Open': 300, 'Pending': 199, 'Assigned': 168, 'Started': 65, 'Closed': 2}{'In Progress': 3402, 'Pending': 199, 'Assigned': 168, 'Open': 300, 'Started': 65, 'Closed': 2}   PASS
+2  BROOKLYN calls                                      88,591                  88,591   PASS
+2  BRONX calls                                         74,674                  74,674   PASS
+2  QUEENS calls                                        69,617                  69,617   PASS
+2  MANHATTAN calls                                     61,956                  61,956   PASS
+2  STATEN ISLAND calls                                  9,871                   9,871   PASS
+2  Unspecified calls                                      196                     196   PASS
+2  Brooklyn: Illegal Parking                           18,460                  18,460   PASS
+2  Brooklyn: HEAT/HOT WATER                            12,582                  12,582   PASS
+2  Brooklyn: Noise - Residential                        9,075                   9,075   PASS
+2  Brooklyn: Blocked Driveway                           6,061                   6,061   PASS
+2  Brooklyn: UNSANITARY CONDITION                       2,990                   2,990   PASS
+2  203 Hull Street calls                                  570                     570   PASS
+2  203 Hull Street noise calls                            568                     568   PASS
+3  population total                                 8,804,190               8,804,190   PASS
+3  population BRONX                                 1,472,654               1,472,654   PASS
+3  population BROOKLYN                              2,736,074               2,736,074   PASS
+3  population MANHATTAN                             1,694,251               1,694,251   PASS
+3  population QUEENS                                2,405,464               2,405,464   PASS
+3  population STATEN ISLAND                           495,747                 495,747   PASS
+3  calls per 1,000 BRONX                              50.7071                 50.7071   PASS
+3  calls per 1,000 BROOKLYN                           32.3789                 32.3789   PASS
+3  calls per 1,000 MANHATTAN                          36.5684                 36.5684   PASS
+3  calls per 1,000 QUEENS                             28.9412                 28.9412   PASS
+3  calls per 1,000 STATEN ISLAND                      19.9114                 19.9114   PASS
+3  rank order by rate                  ['BRONX', 'MANHATTAN', 'BROOKLYN', 'QUEENS', 'STATEN ISLAND']['BRONX', 'MANHATTAN', 'BROOKLYN', 'QUEENS', 'STATEN ISLAND']   PASS
+4  Noise peak hour                                         22                      22   PASS
+4  Noise calls at peak                                  3,878                   3,878   PASS
+4  Heat peak hour                                           9                       9   PASS
+4  Heat calls at peak                                   2,799                   2,799   PASS
+4  heat map shape                                    (30, 24)                (30, 24)   PASS
+4  heat map total (all heat rows)                      47,946                  47,946   PASS
+4  Nov 11 heat calls                                    3,896                   3,896   PASS
+4  Nov 11 10:00 cell                                      292                     292   PASS
+5  open heat cases dropped                                 34                      34   PASS
+5  closed heat cases BRONX                             16,663                  16,663   PASS
+5  median hours BRONX                                  30.815                  30.815   PASS
+5  closed heat cases BROOKLYN                          12,569                  12,569   PASS
+5  median hours BROOKLYN                              37.7256                 37.7256   PASS
+5  closed heat cases MANHATTAN                         11,425                  11,425   PASS
+5  median hours MANHATTAN                             34.1594                 34.1594   PASS
+5  closed heat cases QUEENS                             6,907                   6,907   PASS
+5  median hours QUEENS                                  42.84                   42.84   PASS
+5  closed heat cases STATEN ISLAND                        348                     348   PASS
+5  median hours STATEN ISLAND                          27.744                  27.744   PASS
+6  78-15 Parsons calls                                    728                     728   PASS
+6  Parsons house-of-worship calls                          67                      67   PASS
+6  Parsons channel mix                        {'ONLINE': 728}         {'ONLINE': 728}   PASS
+6  Parsons multi-call minutes                             111                     111   PASS
+6  Parsons calls inside those minutes                     262                     262   PASS
+-------------------------------------------------------------------------------------------
+56/56 checks agree exactly
